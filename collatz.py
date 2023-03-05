@@ -8,5 +8,5 @@ def collatz(numerSelect):
                 cont += 1
                 print(f'Numero: {numerSelect}')
         print(f'cantidad de interaciones : {cont}')
-number = int(input('Ingresa un numero entero positivo'))
+number = int(input('Ingresa un numero entero positivo: '))
 collatz(number)
