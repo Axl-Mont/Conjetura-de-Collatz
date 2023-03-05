@@ -1,18 +1,12 @@
 def collatz(numerSelect):
-        interac = 0
+        cont = 0
         while numerSelect != 1:
-                
-                if numerSelect == 1:
-                        print(f'cantidad de iteraciones: {interac} \n numero: {numerSelect}')
-                elif numerSelect % 2 == 0:
-                        numerSelect = numerSelect / 2
-                        interac += 1
-                        print(f'cantidad de iteraciones: {interac} \n numero: {numerSelect}')
+                if numerSelect % 2 == 0:
+                        numerSelect = int(numerSelect / 2)
                 elif numerSelect % 2 != 0:
-                        numerSelect = numerSelect * 3 + 1
-                        interac += 1
-                        print(f'cantidad de iteraciones: {interac} \n numero: {numerSelect}')
-
-
+                        numerSelect = int(numerSelect * 3 + 1)
+                cont += 1
+                print(f'Numero: {numerSelect}')
+        print(f'cantidad de interaciones : {cont}')
 number = int(input('Ingresa un numero entero positivo'))
 collatz(number)
