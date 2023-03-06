@@ -7,6 +7,6 @@ def collatz(numerSelect):
                         numerSelect = int(numerSelect * 3 + 1)
                 cont += 1
                 print(f'Numero: {numerSelect}')
-        print(f'cantidad de interaciones : {cont}')
+        print(f'Cantidad de iteraciones para el ciclo: {cont}')
 number = int(input('Ingresa un numero entero positivo: '))
 collatz(number)
