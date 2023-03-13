@@ -10,3 +10,4 @@ def collatz(numerSelect):
         print(f'Cantidad de iteraciones para llegar al ciclo 4-2-1: {cont}')
 number = int(input('Ingresa un numero entero positivo: '))
 collatz(number)
+input()
