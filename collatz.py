@@ -1,12 +1,12 @@
-def collatz(numerSelect):
+def collatz(numberSelect):
         cont = 0
-        while numerSelect != 1:
-                if numerSelect % 2 == 0:
-                        numerSelect = numerSelect // 2
+        while numberSelect != 1:
+                if numberSelect % 2 == 0:
+                        numberSelect = numberSelect // 2
                 else:
-                        numerSelect = numerSelect * 3 + 1
+                        numberSelect = numberSelect * 3 + 1
                 cont += 1
-                print(f'Numero: {numerSelect}')
+                print(f'Numero: {numberSelect}')
         print(f'Cantidad de iteraciones para llegar al ciclo 4-2-1: {cont}')
 number = int(input('Ingresa un numero entero positivo: '))
 collatz(number)
